@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าแรก | เที่ยวบ้านเรา</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="site-name">เที่ยวบ้านเรา</p>
+    <p class="tagline">จังหวัดประจวบคีรีขันธ์</p>
+    <nav aria-label="เมนูหลัก">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="places.html">ที่เที่ยว</a></li>
+        <li><a href="food.html">อาหาร</a></li>
+        <li><a href="plan.html">วางแผนเที่ยว</a></li>
+        <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+        <li><a href="login.html">เข้าสู่ระบบ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>เที่ยวบ้านเราในหนึ่งวัน</h1>
+    <p class="intro">ชวนเดินทาง ชมวิวทะเล สัมผัสธรรมชาติ และแวะสถานที่น่าสนใจในจังหวัดประจวบคีรีขันธ์</p>
+
+    <section class="card">
+      <h2>เริ่มจากจุดที่คุณสนใจ</h2>
+      <p>เลือกสถานที่ที่อยากไป แล้วจัดเส้นทางให้เหมาะกับเวลาของคุณ</p>
+      <a class="button" href="places.html">ดูแหล่งท่องเที่ยว</a>
+    </section>
+
+    <section class="slideshow-section">
+      <h2>ภาพบรรยากาศท่องเที่ยวประจวบคีรีขันธ์</h2>
+      <p>เลื่อนชมภาพได้อัตโนมัติ หรือกดปุ่มเพื่อเปลี่ยนภาพด้วยตนเอง</p>
+
+      <div class="slideshow" aria-label="ภาพสไลด์สถานที่ท่องเที่ยว">
+        <div class="slide active">
+          <img src="images/cover.png" alt="ภาพแนะนำเที่ยวบ้านเราในหนึ่งวัน จังหวัดประจวบคีรีขันธ์">
+          <div class="caption">เที่ยวบ้านเราในหนึ่งวัน</div>
+        </div>
+        <div class="slide">
+          <img src="images/aomanow.jpg" alt="รูปปั้นโลมาริมทะเล">
+          <div class="caption">ชมบรรยากาศริมทะเล</div>
+        </div>
+        <div class="slide">
+          <img src="images/kaow.jpg" alt="วิวเมืองและทะเลจากมุมสูง">
+          <div class="caption">ชมวิวเมืองประจวบคีรีขันธ์</div>
+        </div>
+        <div class="slide">
+          <img src="images/klm.jpg" alt="นักท่องเที่ยวชมวิวทะเลจากยอดเขา">
+          <div class="caption">สัมผัสธรรมชาติและวิวทะเล</div>
+        </div>
+        <div class="slide">
+          <img src="images/sapanpla.jpg" alt="สะพานปลาและบรรยากาศริมทะเล">
+          <div class="caption">เดินเล่นชมวิวสะพานปลา</div>
+        </div>
+        <div class="slide">
+          <img src="images/maptravel.jpg" alt="แผนที่แนะนำสถานที่ท่องเที่ยว">
+          <div class="caption">รวมสถานที่ท่องเที่ยวน่าสนใจ</div>
+        </div>
+        <div class="slide">
+          <img src="images/lukmuang.jpg" alt="ศาลหลักเมืองประจวบคีรีขันธ์">
+          <div class="caption">สักการะศาลหลักเมือง</div>
+        </div>
+        <div class="slide">
+          <img src="images/travel-poster.png" alt="โปสเตอร์ท่องเที่ยวบ้านเรา">
+          <div class="caption">ออกเดินทางไปเที่ยวบ้านเรากัน</div>
+        </div>
+
+        <button class="prev" type="button" aria-label="ภาพก่อนหน้า">❮</button>
+        <button class="next" type="button" aria-label="ภาพถัดไป">❯</button>
+        <span class="slide-count" aria-live="polite">1 / 8</span>
+      </div>
+      <div class="dots" aria-label="เลือกภาพสไลด์"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>น.ส.กานต์ธิดา พนัสนาชี 67219100041 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

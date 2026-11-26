@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ข้อมูลการเดินทาง | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<p class="site-name">เที่ยวบ้านเรา</p>
+<p>เที่ยวบ้านเราในหนึ่งวัน จังหวัดประจวบคีรีขันธ์</p>
+</header>
+<nav aria-label="เมนูหลัก">
+<ul>
+<li><a href="index.html" data-page="index">หน้าแรก</a></li>
+<li><a href="places.html" data-page="places">ที่เที่ยว</a></li>
+<li><a href="food.html" data-page="food">อาหาร</a></li>
+<li><a href="plan.html" data-page="plan">วางแผนเที่ยว</a></li>
+<li><a href="travel.html" data-page="travel">ข้อมูลการเดินทาง</a></li>
+</ul>
+</nav>
+<main>
+
+<section class="hero"><h1>ข้อมูลการเดินทาง</h1><p>วางแผนการเดินทางมายังจังหวัดประจวบคีรีขันธ์</p></section>
+<section class="card"><h2>การเดินทางโดยรถยนต์ส่วนตัว</h2><p>สามารถใช้เส้นทางถนนเพชรเกษม (ทางหลวงหมายเลข 4) มุ่งหน้าสู่จังหวัดประจวบคีรีขันธ์ ควรตรวจสอบสภาพการจราจรและเส้นทางก่อนออกเดินทาง</p></section>
+<section class="card"><h2>การเดินทางโดยรถโดยสารหรือรถไฟ</h2><p>สามารถตรวจสอบรอบเวลา ค่าโดยสาร และจุดขึ้นรถจากผู้ให้บริการโดยตรงก่อนเดินทาง เนื่องจากตารางเวลาอาจเปลี่ยนแปลงได้</p></section>
+<section class="card"><h2>แผนที่ท่องเที่ยว</h2><img src="images/maptravel.jpg" alt="แผนที่แนะนำสถานที่ท่องเที่ยว" style="width:100%;max-width:650px;display:block;margin:auto;border-radius:12px"></section>
+<a class="button" href="index.html">กลับหน้าหลัก</a>
+
+</main>
+<footer>
+<p>เที่ยวบ้านเรา | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+<p>จัดทำโดย น.ส.กานต์ธิดา พนัสนาชี</p>
+</footer>
+<script>
+const current = "travel";
+document.querySelectorAll("nav a").forEach(link => {
+  if (link.dataset.page === current) link.classList.add("active");
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>อาหาร | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<p class="site-name">เที่ยวบ้านเรา</p>
+<p>เที่ยวบ้านเราในหนึ่งวัน จังหวัดประจวบคีรีขันธ์</p>
+</header>
+<nav aria-label="เมนูหลัก">
+<ul>
+<li><a href="index.html" data-page="index">หน้าแรก</a></li>
+<li><a href="places.html" data-page="places">ที่เที่ยว</a></li>
+<li><a href="food.html" data-page="food">อาหาร</a></li>
+<li><a href="plan.html" data-page="plan">วางแผนเที่ยว</a></li>
+<li><a href="travel.html" data-page="travel">ข้อมูลการเดินทาง</a></li>
+</ul>
+</nav>
+<main>
+
+<section class="hero"><h1>อาหารท้องถิ่น</h1><p>แวะชิมอาหารและของอร่อยเมื่อมาเที่ยวประจวบคีรีขันธ์</p></section>
+<section class="card"><h2>อาหารทะเลสด</h2><p>จังหวัดประจวบคีรีขันธ์มีพื้นที่ติดทะเล จึงมีอาหารทะเลให้เลือกชิม เช่น กุ้ง หอย ปู ปลา และปลาหมึก ควรเลือกร้านที่สะอาดและปรุงสุกใหม่</p></section>
+<section class="card"><h2>ของฝากและอาหารพื้นถิ่น</h2><p>เลือกซื้อของฝากจากตลาดและร้านค้าชุมชน เพื่อสนับสนุนผู้ประกอบการในท้องถิ่น</p></section>
+<a class="button" href="index.html">กลับหน้าหลัก</a>
+
+</main>
+<footer>
+<p>เที่ยวบ้านเรา | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+<p>จัดทำโดย น.ส.กานต์ธิดา พนัสนาชี</p>
+</footer>
+<script>
+const current = "food";
+document.querySelectorAll("nav a").forEach(link => {
+  if (link.dataset.page === current) link.classList.add("active");
+});
+
+</script>
+</body>
+</html>

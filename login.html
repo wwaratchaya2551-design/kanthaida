@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="site-name">เที่ยวบ้านเรา</p>
+  <nav aria-label="เมนูหลัก">
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="places.html">ที่เที่ยว</a></li>
+      <li><a href="food.html">อาหาร</a></li>
+      <li><a href="plan.html">วางแผนเที่ยว</a></li>
+      <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+      <li><a href="login.html">เข้าสู่ระบบ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>เข้าสู่ระบบ</h1>
+  <section class="card" style="max-width: 400px; margin: 20px auto; text-align: left;">
+    <h2 style="text-align: center;">ลงชื่อเข้าใช้งาน</h2>
+   
+    <form action="index.html" method="post">
+      <div style="margin-bottom: 15px;">
+        <label for="username" style="display: block; margin-bottom: 5px; font-weight: bold;">ชื่อผู้ใช้ หรือ อีเมล:</label>
+        <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้" required
+               style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold;">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" placeholder="กรอกรหัสผ่าน" required
+               style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+      </div>
+
+      <button type="submit" class="button" style="width: 100%; border: none; cursor: pointer; font-size: 16px;">
+        เข้าสู่ระบบ
+      </button>
+    </form>
+
+    <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+      ยังไม่มีบัญชีใช่ไหม? <a href="register.html">สมัครสมาชิก</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>น.ส.กานต์ธิดา พนัสนาชี 67219100041 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+</body>
+</html>
